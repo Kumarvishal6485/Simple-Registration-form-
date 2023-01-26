@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+    <fieldset>
+        <center>
+            <legend><b>Registration Form</b></legend>
+        </center>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="Name">Name</label><br>
+            <input type="text" placeholder="Enter First Name" name="Name">
+            <input type="text" placeholder="Enter Middle Name" name="Name">
+            <input type="text" placeholder="Enter Last Name" name="Name"><br><br>
+            <label for="Father">Father's Name</label><br>
+            <input type="text" placeholder="Father Name" name="Father"><br><br>
+            <label for="Mother">Mother's Name</label><br>
+            <input type="text" placeholder="Mother Name" name="Mother"><br><br>
+            <label for="DOB">Date of Birth</label><br>
+            <input type="date" max="2005-01-01" name="DOB"><br><br>
+            <label for="aadhar">Aadhar Number</label><br>
+            <input type="text" placeholder="Aadhar Number" name="aadhar" maxlength="12"><br><br>
+            <label for="Gmail">Mail</label><br>
+            <input type="email" name="Mail" placeholder="must include @ and ."><br><br>
+            <label for="PhoneNumber">Mobile Number</label><br>
+            <input type="tel" name="Phone_number" minlength="12" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="123-123-1234"><br><br>
+            <label for="Address">Address</label><br>
+            <input type="address" placeholder="Address Line 1" name="Address">
+            <input type="address" placeholder="Address Line 2" name="Address">
+            <input type="address" placeholder="Address Line 3" name="Address">
+            <label for="City">City</label>
+            <select name="City" id="City">
+                <option value="Select">Select</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="New Delhi">New Delhi</option>
+                <option value="Noida">Noida</option>
+                <option value="Pune">Pune</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+            <label for="State">State</label>
+            <select name="State" id="State">
+                <option value="State">State</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="West Bengal">West Bengal</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Save">
+            <input type="reset" value="Reset">
+        </fieldset>
+
+        <fieldset>
+            <legend>Educational Details</legend>
+            <fieldset>
+                <legend>10 <sup>th</sup> Details</legend>
+                <label for="secondary">School/institute</label>
+                <input type="text" placeholder="Enter institute name" name="secondary">
+                <label for="secondary">Board</label>
+                <select name="secondary">
+                    <option value="SELECT">SELECT</option>
+                    <option value="CBSE">CBSE</option>
+                    <option value="ICSE">ICSE</option>
+                    <option value="NIOS">NIOS</option>
+                    <option value="STATE BOARD">STATE BOARD</option>
+                    <option value="OTHER">OTHER</option>
+                </select>
+                <label for="secondary">Roll No.</label>
+                <input type="text" placeholder="Enter roll no." name="secondary">
+                <label for="secondary">Marks obtained</label>
+                <input type="text" placeholder="Enter Marks" name="secondary">
+                <select name="secondary">
+                    <option value="SELECT">SELECT</option>
+                    <option value="%">%</option>
+                    <option value="CGPA">CGPA</option>
+                </select><br><br>
+                <label for="secondary">Specialisation</label>
+                <input type="text" name="secondary">
+            </fieldset>
+            <fieldset>
+                <legend>12 <sup>th</sup> Details</legend>
+                <label for="s_secondary">School/institute</label>
+                <input type="text" placeholder="Enter institute name" name="s_secondary">
+                <label for="s_secondary">Board</label>
+                <select name="s_secondary">
+                    <option value="SELECT">SELECT</option>
+                    <option value="CBSE">CBSE</option>
+                    <option value="ICSE">ICSE</option>
+                    <option value="NIOS">NIOS</option>
+                    <option value="STATE BOARD">STATE BOARD</option>
+                    <option value="OTHER">OTHER</option>
+                </select>
+                <label for="s_secondary">Roll No.</label>
+                <input type="text" placeholder="Enter roll no." name="s_secondary">
+                <label for="s_secondary">Marks obtained</label>
+                <input type="text" placeholder="Enter Marks" name="s_secondary">
+                <select name="s_secondary">
+                    <option value="SELECT">SELECT</option>
+                    <option value="%">%</option>
+                    <option value="CGPA">CGPA</option>
+                </select><br><br>
+                <label for="s_secondary">Specialisation</label>
+                <input type="text" name="s_secondary">
+            </fieldset>
+            <fieldset>
+                <legend>Degree/Diploma(if any)</legend>
+                <label for="degree_diploma">Institute Name</label>
+                <input type="text" placeholder="Enter institute name" name="degree_diploma">
+                <label for="degree_diploma">Board</label>
+                <input type="text" placeholder="Enter Board Name">
+                <label for="degree_diploma">Roll No.</label>
+                <input type="text" placeholder="Enter roll no." name="degree_diploma">
+                <label for="degree_diploma">Marks obtained</label>
+                <input type="text" placeholder="Enter Marks" name="degree_diploma">
+                <select name="degree_diploma">
+                    <option value="SELECT">SELECT</option>
+                    <option value="%">%</option>
+                    <option value="CGPA">CGPA</option>
+                </select><br><br>
+                <label for="degree_diploma">Specialisation</label>
+                <input type="text" name="degree_diploma">
+            </fieldset>
+            <br>
+            <input type="submit" value="Save">
+            <input type="reset">
+        </fieldset>
+    </fieldset>
+</body>
+
+</html>
