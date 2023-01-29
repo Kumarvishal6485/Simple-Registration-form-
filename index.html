@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+    <fieldset>
+        <center>
+            <legend><b>Registration Form</b></legend>
+        </center>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="Name">Name</label><br>
+            <input type="text" placeholder="First Name" name="Name">
+            <input type="text" placeholder="Middle Name" name="Name">
+            <input type="text" placeholder="Last Name" name="Name"><br><br>
+            <label for="Father">Father's Name</label><br>
+            <input type="text" placeholder="Father Name" name="Father">
+            <input type="text" placeholder="Middle Name" name="Father">
+            <input type="text" placeholder="Last Name" name="Father"><br><br>
+            <label for="Mother">Mother's Name</label><br>
+            <input type="text" placeholder="Mother Name" name="Mother">
+            <input type="text" placeholder="Middle Name" name="Mother">
+            <input type="text" placeholder="Last Name" name="Mother"><br><br>
+            <label for="DOB">Date of Birth</label><br>
+            <input type="date" max="2005-01-01" name="DOB"><br><br>
+            <label for="aadhar">Aadhar Number</label><br>
+            <input type="text" placeholder="Aadhar Number" name="aadhar" maxlength="12"><br><br>
+            <label for="Gmail">Mail</label><br>
+            <input type="email" name="Mail" placeholder="must include @ and .">
+            <input type="submit" value="Verify"><br><br>
+            <label for="PhoneNumber">Mobile Number</label><br>
+            <input type="tel" name="Phone_number" minlength="12" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="123-123-1234">
+            <input type="submit" value="Verify"><br><br>
+            <center>
+                <input type="submit" value="Save" onclick="alert('Save details')">
+                <input type="reset" value="Reset" onclick="alert('Saved details will be removed')">
+            </center>
+        </fieldset>
+
+        <fieldset>
+            <legend>Residential Details</legend>
+            <label for="pAddress">Permament Address</label><br>
+            <input type="address" placeholder="Address Line 1" name="Address">
+            <input type="address" placeholder="Address Line 2" name="Address">
+            <input type="address" placeholder="Address Line 3" name="Address">
+            <label for="City">City</label>
+            <select name="City" id="City">
+                <option value="Select">Select</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="New Delhi">New Delhi</option>
+                <option value="Noida">Noida</option>
+                <option value="Pune">Pune</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+            <label for="State">State</label>
+            <select name="State" id="State">
+                <option value="State">State</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="West Bengal">West Bengal</option>
+            </select>
+            <br><br>
+            <label for="Address">Current Address Same as Permanent Address ?</label>
+            <input type="radio" name="Address" value="Yes">
+            <label for="address">Yes</label>
+            <input type="radio" name="Address" value="No">
+            <label for="address">No</label>
+            <br><br>
+            <label for="Address">Current Address</label><br>
+            <input type="address" placeholder="Address Line 1" name="Address">
+            <input type="address" placeholder="Address Line 2" name="Address">
+            <input type="address" placeholder="Address Line 3" name="Address">
+            <label for="City">City</label>
+            <select name="City" id="City">
+                <option value="Select">Select</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="New Delhi">New Delhi</option>
+                <option value="Noida">Noida</option>
+                <option value="Pune">Pune</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+            <label for="State">State</label>
+            <select name="State" id="State">
+                <option value="State">State</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="West Bengal">West Bengal</option>
+            </select>
+            <br><br>
+            <center>            
+                <input type="submit" value="Save" onclick="alert('Save details')">
+                <input type="reset" value="Reset" onclick="alert('Saved details will be removed')">
+            </center>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Educational Details</legend>
+            <fieldset>
+                <legend>10 <sup>th</sup> Details</legend>
+                <label for="secondary">School/institute</label>
+                <input type="text" placeholder="Enter institute name" name="secondary">
+                <label for="secondary">Board</label>
+                <select name="secondary">
+                    <option value="SELECT">SELECT</option>
+                    <option value="CBSE">CBSE</option>
+                    <option value="ICSE">ICSE</option>
+                    <option value="NIOS">NIOS</option>
+                    <option value="STATE BOARD">STATE BOARD</option>
+                    <option value="OTHER">OTHER</option>
+                </select>
+                <label for="secondary">Roll No.</label>
+                <input type="text" placeholder="Enter roll no." name="secondary">
+                <label for="secondary">Marks obtained</label>
+                <input type="text" placeholder="Enter Marks" name="secondary">
+                <select name="secondary">
+                    <option value="SELECT">SELECT</option>
+                    <option value="%">%</option>
+                    <option value="CGPA">CGPA</option>
+                </select><br><br>
+                <label for="secondary">Specialisation</label>
+                <input type="text" name="secondary">
+            </fieldset>
+            <fieldset>
+                <legend>12 <sup>th</sup> Details</legend>
+                <label for="s_secondary">School/institute</label>
+                <input type="text" placeholder="Enter institute name" name="s_secondary">
+                <label for="s_secondary">Board</label>
+                <select name="s_secondary">
+                    <option value="SELECT">SELECT</option>
+                    <option value="CBSE">CBSE</option>
+                    <option value="ICSE">ICSE</option>
+                    <option value="NIOS">NIOS</option>
+                    <option value="STATE BOARD">STATE BOARD</option>
+                    <option value="OTHER">OTHER</option>
+                </select>
+                <label for="s_secondary">Roll No.</label>
+                <input type="text" placeholder="Enter roll no." name="s_secondary">
+                <label for="s_secondary">Marks obtained</label>
+                <input type="text" placeholder="Enter Marks" name="s_secondary">
+                <select name="s_secondary">
+                    <option value="SELECT">SELECT</option>
+                    <option value="%">%</option>
+                    <option value="CGPA">CGPA</option>
+                </select><br><br>
+                <label for="s_secondary">Specialisation</label>
+                <input type="text" name="s_secondary">
+            </fieldset>
+            <fieldset>
+                <legend>Degree/Diploma(if any)</legend>
+                <label for="degree_diploma">Institute Name</label>
+                <input type="text" placeholder="Enter institute name" name="degree_diploma">
+                <label for="degree_diploma">Board</label>
+                <input type="text" placeholder="Enter Board Name">
+                <label for="degree_diploma">Roll No.</label>
+                <input type="text" placeholder="Enter roll no." name="degree_diploma">
+                <label for="degree_diploma">Marks obtained</label>
+                <input type="text" placeholder="Enter Marks" name="degree_diploma">
+                <select name="degree_diploma">
+                    <option value="SELECT">SELECT</option>
+                    <option value="%">%</option>
+                    <option value="CGPA">CGPA</option>
+                </select><br><br>
+                <label for="degree_diploma">Specialisation</label>
+                <input type="text" name="degree_diploma">
+            </fieldset>
+            <br>
+            <center>
+                <input type="submit" value="Save" onclick="alert('Save details')">
+                <input type="reset" value="Reset" onclick="alert('Saved details will be removed')">
+            </center>
+        </fieldset>
+        <fieldset>
+            <legend>Account Details</legend>
+            <label for="bank">Bank</label>
+            <select name="bank" id="bank">
+                <option value="Select">Select</option>
+                <option value="Punjab National">Punjab National</option>
+                <option value="ICICI">ICICI</option>
+                <option value="HDFC">HDFC</option>
+                <option value="Bank Of Baroda">Bank Of Baroda</option>
+            </select>
+            <label for="Account Type">Account Type</label>
+            <select name="Account Type" id="Account Type">
+                <option value="Select">Select</option>
+                <option value="Saving">Saving</option>
+                <option value="Current">Current</option>
+            </select>
+            <label for="Account No">Account No.</label>
+            <input type="text" placeholder="Enter Account No." name="Account No" minlength="12" maxlength="16">
+            <label for="micr">MICR No.</label>
+            <input type="text" placeholder="Enter MICR No." name="micr">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Document and Skill</legend>
+            <label for="photograph">Photograph<abbr title="mandatory">*</abbr> : </label>
+            <input type="file" name = "photograph" value="photograph">
+            <br><br>
+            <label for="sign">Signature : </label>
+            <input type="file" name="sign" value="sign">
+            <br><br>
+            <label for="resume">Resume : </label>
+            <input type="file" name="resume" value="resume">
+            <br><br>
+            <label for="skills">Skills Required : </label>
+            <center>
+                <table border="2px">
+                    <tr>
+                        <th>Domain</th>
+                        <th>Requirement</th>
+                        <th>Eligible</th>
+                    </tr>
+                    <tr>
+                        <td>Front End(Web)</td>
+                        <td>Html , Css/Bootstrap , Js </td>
+                        <td>
+                            <input type="radio" value="Yes" name="frontendw">
+                            <label for="frontendw">Yes</label>
+                            <input type="radio" value="No" name="frontendw">
+                            <label for="frontendw">No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Back End(Web)</td>
+                        <td>.Net / php</td>
+                        <td>
+                            <input type="radio" value="Yes" name="backendw">
+                            <label for="backendw">Yes</label>
+                            <input type="radio" value="No" name="backendw">
+                            <label for="backendw">No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Front End(App)</td>
+                        <td>Python / Java</td>
+                        <td>
+                            <input type="radio" value="Yes" name="frontenda">
+                            <label for="frontenda">Yes</label>
+                            <input type="radio" value="No" name="frontenda">
+                            <label for="frontenda">No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Back End(app)</td>
+                        <td>.Net / php</td>
+                        <td>
+                            <input type="radio" value="Yes" name="backenda">
+                            <label for="backenda">Yes</label>
+                            <input type="radio" value="No" name="backenda">
+                            <label for="backenda">No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Game Developer</td>
+                        <td>C++ , C#</td>
+                        <td>
+                            <input type="radio" value="Yes" name="game">
+                            <label for="game">Yes</label>
+                            <input type="radio" value="No" name="game">
+                            <label for="game">No</label>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+            <br><br>
+            <center>
+                <input type="submit" value="Save" onclick="alert('Save details')">
+                <input type="reset" value="Reset" onclick="alert('Saved details will be removed')">
+            </center>
+        </fieldset>
+        <fieldset>
+            <legend>Declaration</legend>
+            “I hereby declare that all the details mentioned above are in accordance with the truth and fact as per my knowledge and I hold the responsibility for the correctness of the above-mentioned particulars.”
+            <center>
+                <input type="submit" value="Save" onclick="alert('Save details')" name="Save">
+                <input type="submit" value="Preview" name = "Preview">
+                <input type="reset" value="Reset" onclick="alert('Saved details will be removed')" name="Reset">
+            </center>
+        </fieldset> 
+    </fieldset>
+</body>
+
+</html>
